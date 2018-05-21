@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #000;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.opening span {
+  opacity: 0;
+  text-shadow: 0px 0px 0px white;
+  animation: animateOpen 8s ease-in-out infinite;
+  margin-right: 1em; }
+
+.opening span:nth-child(4n) {
+  animation-delay: 3s; }
+
+.opening span:nth-child(4n-1) {
+  animation-delay: 2s; }
+
+.opening span:nth-child(4n-2) {
+  animation-delay: 1s; }
+
+.opening span:nth-child(4n-3) {
+  animation-delay: 0s; }
+
+@keyframes animateOpen {
+  0% {
+    opacity: 1;
+    text-shadow: 0px 0px 32px white; }
+  10% {
+    text-shadow: 0px 0px 0px white; }
+  100% {
+    opacity: 0; } }
